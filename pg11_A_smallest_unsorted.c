@@ -20,14 +20,7 @@ int findMissingInteger (int my_array[], int array_len)
 
     printf("\nSorted!\n");
 
-    //loop to find value 1 or more
     int h=0;
-    // while (h < array_len && my_array[h] <= 0)
-    // {
-    //     printf("\nh: %d less than %d array length and element %d = %d less than 1\n", h, array_len, h, my_array[h]);
-    //     h++;
-    //     printf("incremented h is: %d",h);
-    // }
 
     for(int h = 0; (h < array_len && my_array[h] <= 0); h++)
     {
@@ -49,7 +42,6 @@ int findMissingInteger (int my_array[], int array_len)
 int main()
 {
     int array_len;
-    // int my_array[7] = {1,33,5,-213,22,-32,-43};
     printf("Please enter the number of elements in the array:\n");
     scanf("%d", &array_len);
     int my_array[array_len];
